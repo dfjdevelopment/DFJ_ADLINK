@@ -56,23 +56,26 @@
                 <div class="from-row">
                     <div class="form-group">
                         <label for="email_input">Your email address</label>
-                        <input type="email" id="email_input" class="form-control" required>
+                        <input type="email" id="email_input" class="form-control" required placeholder="Email Address">
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="col">
+                        <label for="form_firstname">First Name</label>
                         <input type="text" class="form-control" id="form_firstname" placeholder="First name">
                     </div>
                     <div class="col">
+                        <label for="form_lastname">Last Name</label>
                         <input type="text" class="form-control" id="form_lastname" placeholder="Last name">
                     </div>
                 </div>
                 <div class="from-row mb-3 mt-3">
-                    <textarea class="form-control" id="validationTextarea" placeholder="Message for us" required></textarea>
+                    <label for="validationTextarea">Message</label>
+                    <textarea class="form-control" id="validationTextarea" placeholder="Message" required></textarea>
                 </div>
                 <div class="form-row">
-                    <input type="submit" class="btn btn-success" value="Submit form">
+                    <input type="submit" class="btn btn-success" value="Submit">
                 </div>
             </form>
         </div>
