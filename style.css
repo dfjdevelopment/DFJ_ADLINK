@@ -34,13 +34,22 @@ html {
     border: none;
 }
 
+h1{
+    text-align: center;
+    font-family: 'Cambay', sans-serif;
+}
 h2,
 h3 {
     font-family: 'Cambay', sans-serif;
     text-align: center;
 }
 
-
+.prototype_screenshoot{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
 
 .nav-pills>li.active>a{
     background-color: rgba(43, 255, 0, 0.986);
