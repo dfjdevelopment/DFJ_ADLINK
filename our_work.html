@@ -51,8 +51,24 @@
         <div class="container pt-5" id="our_work">
             <div class="container pt-5">
                 <h1>ADLINK Project</h1>
-                <img class="prototype_screenshoot" src="images/placeholder.png" alt="Prototype Screenshot">
-                <p>Our application allows users to securely connect to ADLINK's database in order to manage profiles.<br/> In order to do this, we used the Symfony which allows us to easily add things like security, validation, authentication and authorisation in one bundle to make the website run more efficiently.<br/>We also made our website a PWA(Progressive web application) which allows for full responsiveness and browser compatibility independent of what device the user is using, allows the use of notifications to alert users, works offline and is safe to use.</p>
+                <p>Our application allows users to securely connect to ADLINK's database in order to manage profiles.<br/> Our project is written in PHP Framework Symfony 5.2. For communication with the MySQL database we are using ORM packaged which uses Doctrine as an abstraction of PDO.<br/>
+                    For restriction of access, authorisation and authentication we are using built- in features of Symfony security core which uses user roles for restriction of access. Those roles could be changed, questioned at any point of the development process.<br/>
+                    For handling routes, we are using Symfony’s routing functionality which we separate for every route. These routes have functions that pass the main information for the logic to its service parts where the rest of the logic is done. At the end we render the application with a message if the previous part happened successfully or not through build in flash messages.<br/>
+                    For handling form’s render, validation and submission we are using Form builder type classes which were designed for all things above. We declare how form would be created in inputs and fields. Then we use a function to create a view in html and pass it as a parameter through the routing package. This way we can use advanced forms of security like CSRF token.
+                    For rendering the view part of the website, we are using template engine twig. This powerful building blog is allowing us to break down the parts of the website for clear usage and no repetitive code. Twig can also allow us to print variables, forms, arrays of any kinds with filters and more.<br/>
+                    Finally, we use bootstrap and bootstrap-tables for styling and for browser functionality JavaScript and JQuery. 
+                <img class="prototype_screenshoot" src="images/registration.png" alt="Prototype Screenshot">
+                <p class="screenshoot_description">Registration Screen</p>
+                <img class="prototype_screenshoot" src="images/change_password.png" alt="Prototype Screenshot">
+                <p class="screenshoot_description">Password Change Screen</p>
+                <img class="prototype_screenshoot" src="images/user_screen.png" alt="Prototype Screenshot">
+                <p class="screenshoot_description">User details Screen</p>
+                <img class="prototype_screenshoot" src="images/profile_table.png" alt="Prototype Screenshot">
+                <p class="screenshoot_description">Profile list Screen</p>
+                <img class="prototype_screenshoot" src="images/profile_screen.png" alt="Prototype Screenshot">
+                <p class="screenshoot_description">Profile details Screen</p>
+                
+                </p>
             </div>
         </div>
     </div>
